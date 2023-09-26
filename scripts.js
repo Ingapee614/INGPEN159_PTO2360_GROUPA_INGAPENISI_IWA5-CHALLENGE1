@@ -30,7 +30,7 @@ const cost= shoes +toys+ batteries + pens + shirts;
 
 
 if (cost <= 1000 && currency==='R') {
-  if (location === 'NAM' || location==='RSA'&& customers==1) {
+  if (country === 'NAM' || country==='RSA'&& customers==1) {
       shipping = 0; // Set shipping to 0
   
   }
@@ -40,7 +40,7 @@ if (shipping === 0 && customers !== 1) {
   console.log(FREE_WARNING);
 }
 
-if (location === 'NK') {
+if (country=== 'NK') {
   console.log(BANNED_WARNING);
 } 
 price= cost + shipping
